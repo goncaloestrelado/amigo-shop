@@ -25,7 +25,7 @@ export default function ClothingSection() {
         <section>
           <CustomCarousel>
             <Banner
-              title={{ string: "WINTER COLLECTION", className: "text-pumpkin" }}
+              title={{ string: "WINTER", className: "text-pumpkin" }}
               description={{
                 string: "100% Cotton and natural pigments",
                 className: "",
