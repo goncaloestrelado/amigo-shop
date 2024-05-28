@@ -46,8 +46,6 @@ export function Navbar() {
   return (
     <div>
       <Container
-        visible={visible}
-        isScrolled={isScrolled}
         className={`transition-all ${isScrolled ? "bg-neutral-600" : "bg-transparent"} ${
           visible ? "translate-y-0" : "-translate-y-full"
         }`}
@@ -94,12 +92,7 @@ export function Navbar() {
   );
 }
 
-interface Props {
-  visible: boolean;
-  isScrolled: boolean;
-}
-
-const Container = styled.header<Props>`
+const Container = styled.header`
   overflow: hidden;
   position: fixed;
   top: 0;
