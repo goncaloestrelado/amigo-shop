@@ -36,7 +36,7 @@ export default function ExploreSection() {
             <Banner
               title={{ string: "VEGAN LEATHER", className: "text-floral" }}
               description={{
-                string: "Made from recycled plastic bottles",
+                string: "Made from recycled bottles",
                 className: "",
               }}
               url="/images/Banner2.png"
