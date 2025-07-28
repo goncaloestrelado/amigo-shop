@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Tab } from "./Tab";
 import { SearchBar } from "../SearchBar";
-import { CurrencySelect } from "../Footer/CurrencySelect";
 import { useGetAllCategories } from "../../lib/api-hooks";
 import { FiMenu } from "react-icons/fi";
 

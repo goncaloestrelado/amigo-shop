@@ -1,6 +1,5 @@
 import ExploreSection from "./ExploreSection";
 import ProductSection from "./ProductSection";
-import JewelrySection from "./JewelrySection";
 
 export function Home() {
   return (

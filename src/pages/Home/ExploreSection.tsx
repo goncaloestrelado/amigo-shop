@@ -5,7 +5,6 @@ import { Modal } from "../../components";
 import { useEffect } from "react";
 import { useGetAllProducts } from "../../lib/api-hooks";
 import { Banner, CustomCarousel, ProductList } from "../../components";
-import { Link } from "react-router-dom";
 
 export default function ExploreSection() {
   const [allProducts, getAllProducts, productsFetchState] = useGetAllProducts();

@@ -3,12 +3,10 @@ import { ProductData } from "../../utils/types";
 import { useContext } from "react";
 import { ShopContext, ShopContextType } from "../../context/ShopContext";
 import { RatingStars } from "../RatingStars";
-import { BsCartPlus, BsCartCheckFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export function ProductCard({ product }: { product: ProductData }) {
-  const { addToCart, cartItems, selectedCurrency } = useContext(ShopContext) as ShopContextType;
-  const cartItemCount = cartItems[product.id];
+  const { selectedCurrency } = useContext(ShopContext) as ShopContextType;
   const price = selectedCurrency === "Dollar" ? product.price : product.price * 0.94;
 
   return (
@@ -74,11 +72,4 @@ const Price = styled.p``;
 const Rating = styled.div`
   display: flex;
   justify-content: space-around;
-`;
-const Button = styled.button`
-  color: red;
-  &:hover {
-    color: #ffffff;
-    background-color: red;
-  }
 `;

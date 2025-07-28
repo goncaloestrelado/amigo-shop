@@ -24,10 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "CI=true & react-scripts start",
-    "build": "CI=true & react-scripts build",
-    "test": "CI=true & react-scripts test",
-    "eject": "CI=true & react-scripts eject"
+    "start": "set CI=true && react-scripts start",
+    "build": "set CI=true && react-scripts build",
+    "test": "set CI=true && react-scripts test",
+    "eject": "set CI=true && react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
